@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: client-1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server-1:9000/eureka/
+server:
+  port: 9003

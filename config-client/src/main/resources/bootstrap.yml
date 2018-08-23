@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      name: config-client  #config-client-dev.yml
+      profile: dev
+      label: master #git 分支
+      discovery:
+        enabled: true
+        service-id: config-server #配置服务的名称，application name
+    bus:
+      trace:
+        enabled: true #开启消息跟踪
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server-1:6001/eureka/

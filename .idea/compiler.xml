@@ -7,15 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="client-1" />
+        <module name="common" />
+        <module name="config-client" />
+        <module name="config-server" />
         <module name="consumer-1" />
         <module name="eureka-1" />
+        <module name="rabbitmq" />
+        <module name="zuul-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client-1" target="1.8" />
       <module name="cloud-test" target="1.6" />
+      <module name="common" target="1.5" />
+      <module name="config-client" target="1.6" />
+      <module name="config-server" target="1.6" />
       <module name="consumer-1" target="1.8" />
       <module name="eureka-1" target="1.8" />
+      <module name="rabbitmq" target="1.8" />
+      <module name="zuul-1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

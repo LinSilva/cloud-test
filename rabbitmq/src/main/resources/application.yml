@@ -1,0 +1,15 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: rabbit-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server-1:6001/eureka/
+
+spring.rabbitmq.addresses: 127.0.0.1:5672
+spring.rabbitmq.username: guest
+spring.rabbitmq.password: guest
+spring.rabbitmq.publisher-confirms: true
+spring.rabbitmq.virtual-host: /

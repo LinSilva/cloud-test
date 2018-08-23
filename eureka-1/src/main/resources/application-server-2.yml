@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 6002
 eureka:
   instance:
     hostname: server-2
@@ -7,4 +7,4 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://server-1:9000/eureka/
+      defaultZone: http://server-1:6001/eureka/

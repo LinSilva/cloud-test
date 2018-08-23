@@ -13,6 +13,11 @@
     <modules>
         <module>eureka-1</module>
         <module>client-1</module>
+        <module>consumer-1</module>
+        <module>config-server</module>
+        <module>config-client</module>
+        <module>zuul-1</module>
+        <module>common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -20,6 +25,14 @@
         <version>1.5.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.lxh</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>

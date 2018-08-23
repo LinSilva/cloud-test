@@ -1,0 +1,24 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LinSilva/spring-cloud-config
+          #username: 18718818553@163.com
+          #password: lxh688553
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server-1:6001/eureka/
+management:
+  security:
+    enabled: false #刷新时，关闭安全验证
